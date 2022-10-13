@@ -1,0 +1,7 @@
+<label for="">Type Your Username</label>
+<br>
+<input [(ngModel)]="typedUsername" class="form-control border border-danger" type="text">
+
+<p>{{typedUsername}}</p>
+
+<button [disabled]="isUsernameTyped()" (click)="clearUsername()">Clear</button>
