@@ -1,0 +1,8 @@
+<h1 *ngIf ="showingCondition; else otherCondition"> This button is shown since it deserves to be displayed...</h1>
+
+<ng-template #otherCondition>
+    <p> This paragraph will be shown only button is not shown...</p>
+</ng-template>
+
+
+<button (click)="updateCondition()"> Game Changer </button>
