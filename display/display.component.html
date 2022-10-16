@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <button (click)="buttonClick()" class="border border-danger">Display Details</button>
+            <p *ngIf="buttonClicked">{{specialParagraph}}</p>
+
+<div *ngFor="let item of btnClicked" [ngStyle]="{backgroundColor: item>=5 ?'blue':'white'}" [ngClass]="{colorYellow: item>=5}" >{{item}}
+
+</div>
+         
+        </div>
+    </div>
+</div>
+
